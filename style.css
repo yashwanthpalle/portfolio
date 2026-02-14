@@ -292,6 +292,8 @@ padding: 30px;
 .internal-section {
    background: transparent; 
     padding: 20px;
+  margin:100%
+
 }
 .card {
     background: rgba(255, 255, 255, 0.03);
@@ -299,7 +301,7 @@ padding: 30px;
     padding: 30px;
     border-radius: 15px;
     color: #d1d5db;
-    width: 100% auto;
+    width: 120% auto;
     height: auto;
     flex-wrap: wrap;
     align-items: center;
