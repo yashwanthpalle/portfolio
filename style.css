@@ -1,3 +1,7 @@
+ * {
+  box-sizing: border-box;
+}
+
  .asd{
     background:
   radial-gradient(circle at 10% 20%, rgba(0, 200, 255, 0.45), transparent 50%),
@@ -9,15 +13,18 @@ background-attachment: fixed;
 flex-wrap: wrap;
    }
 
-   .bob{
-    width: 450px;
-    border-radius: 50%;
-    margin-left: 50px;
- border: 3px solid #4facfe;
+   .bob {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 50%;
+  border: 3px solid #4facfe;
   box-shadow: 0 0 15px #4facfe;
-   }
+  margin: 20px auto;
+}
+
 .top {
   font-size: 100px;
+  padding: 0 10px;
   background: linear-gradient(
     270deg,
     #38BDF8,
@@ -40,7 +47,7 @@ flex-wrap: wrap;
 .box{
   display: flex;
 align-items: self-start;
-gap: 120px;
+gap: 20px;
 justify-content: center;
 flex-wrap: wrap;
 }
@@ -61,7 +68,9 @@ flex-wrap: wrap;
   border-radius: 10px;
   font-weight: 600;
   font-size: 16px;
-  margin-left: 80px;
+  margin: 20px auto;
+display: inline-block;
+
   display: inline-block;
   transition: all 0.3s ease;
   box-shadow: 0 6px 18px rgba(99, 102, 241, 0.5);
@@ -97,9 +106,9 @@ button:hover {
   gap: 20px;
 }
 .ab {
-  width: 70%;
-  margin: 100px auto;   
-  padding: 20px;
+  width: 95%;
+  margin: auto;   
+  padding: 10px;
 
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
@@ -211,7 +220,7 @@ flex-wrap: wrap;
 }
 .prj{
    display: flex;
-  gap: 180px;        /* space between items */
+  gap: 20px;        /* space between items */
   align-items: center;
   color: white;
   margin: auto;
@@ -237,7 +246,7 @@ flex-wrap: wrap;
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 70px;
   padding: 40px;
   margin-top: 0;
   margin-bottom: 0;
@@ -247,10 +256,10 @@ flex-wrap: wrap;
 /* Card hover effect */
 .project-card {
   transition: transform 0.3s ease;
-  margin-top: 0;
-  margin-bottom: 0;
-    
-
+    display: flex;
+flex-direction: column;
+height: 100%;
+padding: 0px;
 }
 
 .project-card:hover {
@@ -294,11 +303,13 @@ flex-wrap: wrap;
     padding: 30px;
     border-radius: 15px;
     color: #d1d5db;
-    width: 350px;
+    width: 100% auto;
+max-width: 350px ;
     height: auto;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    grid-template-columns: 1fr 1fr;
 }
 .left {
     display: flex;
@@ -316,21 +327,27 @@ flex-wrap: wrap;
     background: transparent;
     color: rgb(191, 182, 190);
     display: list-item;
-    height: 20px;
+    height: 75px;
+    display: grid;
+
     
 }
 
 .form-card textarea {
-    height: 90px;
+    height: auto;
+    width: 100%;
+max-width: 350px;
+
 }
 .socials {
     display: flex;
     gap: 20px;
+
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,0.2);
     display: flex;
@@ -347,11 +364,15 @@ flex-wrap: wrap;
     transform: translateY(-5px);
 }
 .sj{
-  margin-left: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px ;
 }
 .ppe{
   font-size: xx-large;
   color: white;
+  
+
 }
 .cl{
   color: rgb(222, 211, 211);
@@ -373,4 +394,34 @@ flex-wrap: wrap;
 }
 .ss{
   font-size:large;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .box,
+  .prj {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ab {
+    width: 95%;
+  }
+
+  .top {
+    font-size: 36px;
+    padding: 0 10px;
+  }
+ .project-card {
+    width: 100%;
+    max-width: 350px;
+  }
 }
