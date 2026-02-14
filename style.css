@@ -281,10 +281,7 @@ padding: 30px;
 .ji{
    
   color: #cc7fe6;
-
-
   font-size: 21px;
-  
 }
 .cs{
   font-size: large;
@@ -322,7 +319,7 @@ padding: 30px;
     background: transparent;
     color: rgb(191, 182, 190);
     display: list-item;
-    height: 80px;
+    height: 60px;
     display: grid;
 
     
