@@ -291,7 +291,7 @@ padding: 30px;
 }
 .internal-section {
    background: transparent; 
-    padding: 40px;
+    padding: 20px;
 }
 .card {
     background: rgba(255, 255, 255, 0.03);
@@ -300,7 +300,6 @@ padding: 30px;
     border-radius: 15px;
     color: #d1d5db;
     width: 100% auto;
-max-width: 350px ;
     height: auto;
     flex-wrap: wrap;
     align-items: center;
@@ -310,7 +309,7 @@ max-width: 350px ;
 .left {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 .form-card input,
