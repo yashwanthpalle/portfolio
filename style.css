@@ -291,7 +291,7 @@ padding: 30px;
 }
 .internal-section {
    background: transparent; 
-    padding: 20px;
+    padding: 30px;
 
 }
 .card {
@@ -300,12 +300,11 @@ padding: 30px;
     padding: 30px;
     border-radius: 15px;
     color: #d1d5db;
-    width: 120% auto;
+    width: 100% auto;
     height: auto;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;
 }
 .left {
     display: flex;
@@ -323,7 +322,7 @@ padding: 30px;
     background: transparent;
     color: rgb(191, 182, 190);
     display: list-item;
-    height: 75px;
+    height: 80px;
     display: grid;
 
     
