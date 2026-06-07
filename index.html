@@ -1,10 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>yashwanth.portfolio.in</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="asd">
+
+<!-- Hero Section -->
+<div class="box">
+  <img class="bob" src="hello.jpeg" alt="Palle Yashwanth">
+  <div class="hero-text">
+      <h1 class="top"> Hello, I'm<br>Palle Yashwanth</h1>
+      <p class="opp">IT Student | Web Developer | Problem Solver</p>
+  </div>
+</div>
+
+<div class="cta-container">
+    <a href="#ss" class="btn">Hire Me</a> 
+    <a href="yashwanth_resume.pdf" download><button class="resume-btn">Download Resume</button></a>
+</div>
+
+<!-- About Section -->
+<div class="ab">
+  <h2 class="hd">About Me</h2>
+  <p class="pg">
+    IT student with a strong interest in problem-solving and emerging technologies. 
+    Skilled in analyzing problems, building logical solutions, and applying technical 
+    knowledge through hands-on projects.<br><br>
+    Actively seeking internship opportunities to gain practical experience, 
+    contribute to meaningful projects, and enhance technical expertise.
+  </p>
+</div>
+
+<!-- Skills Section -->
+<div class="ab">
+    <h2 class="hd">Technical Skills</h2>
+    <div class="sv"> 
+        <span class="neo-btn">HTML</span>
+        <span class="neo-btn">CSS</span>
+        <span class="neo-btn">JAVASCRIPT</span> 
+        <span class="neo-btn">JAVA</span> 
+        <span class="neo-btn">PYTHON</span> 
+        <span class="neo-btn">SQL</span>
+    </div>
+</div>
+
+<!-- Projects Section -->
+<div class="ab">
+  <h2 class="hd">Featured Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+        <h3 class="pp">🔹 Portfolio Website</h3> 
+        <p class="sv-text">A personal portfolio website designed to showcase my skills and projects. 
+        Includes sections like About Me, Skills, and Contact with a modern responsive UI.<br><br>
+        <span class="tech-tag">Technologies:</span> HTML, CSS</p>
+    </div>
+    <div class="project-card">
+        <h3 class="pp">🔹 Calculator App</h3>
+        <p class="sv-text">An interactive calculator built for basic arithmetic operations. 
+        Focuses on clean logic and user-friendly interface design.<br><br>
+        <span class="tech-tag">Technologies:</span> HTML, CSS, JavaScript</p>
+    </div>
+    <div class="project-card">
+        <h3 class="pp">🔹 Landing Page</h3>
+        <p class="sv-text">A modern and responsive landing page designed for product showcases. 
+        Focuses on attractive visuals and clear call-to-action sections.<br><br>
+        <span class="tech-tag">Technologies:</span> HTML, CSS</p>
+    </div>
+  </div>
+</div>
+
+<!-- Education Section -->
+<div class="education-section">
+  <h2 class="hd">🎓 Education</h2>
+  <div class="edu-box">
+      <h3 class="ji">🏛️ B.Tech – Information Technology</h3>
+      <h4 class="school">JB Institute Of Engineering Technology <span>(2024-2028)</span></h4>
+      <p class="cs">Focused on software engineering, data structures, and web development.</p>
+  </div>
+
+  <div class="edu-box">
+      <h3 class="ji">🏛️ Board Of Intermediate Education</h3>
+      <h4 class="school">TG Model Junior College <span>(2022-2024)</span></h4>
+      <p class="cs">Specialized in Mathematics, Physics, and Chemistry.</p>
+  </div>
+</div>
+
+<!-- Contact Section -->
 <section class="internal-section" id="ss">
-  <p class="hd">Get In Touch</p>
-  
+  <h2 class="hd">Get In Touch</h2>
   <div class="contact-container">
-      <div class="glass-card contact-info">
+      <!-- Contact Info -->
+      <div class="glass-card">
           <p class="ppe">Let's Connect</p>
-          <p class="sv-text">I'm always open to discussing new projects, creative ideas, or opportunities.</p>
+          <p class="sv-text">Open to discussing new projects, creative ideas, or internship opportunities.</p>
           
           <div class="contact-details">
               <a href="mailto:palleyashwanth33@gmail.com" class="detail-item">
@@ -19,33 +113,27 @@
 
           <p class="ppe" style="margin-top: 30px; font-size: 24px;">Follow Me</p>
           <div class="socials">
-              <a href="https://github.com/yashwanthpalle" target="_blank" class="icon" aria-label="GitHub">
-                  <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/palle-yashwanth-52464436b" target="_blank" class="icon" aria-label="LinkedIn">
-                  <i class="fa-brands fa-linkedin-in"></i>
-              </a>
+              <a href="https://github.com/yashwanthpalle" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/palle-yashwanth-52464436b" target="_blank" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
       </div>
 
-      <div class="glass-card contact-form-wrapper">
+      <!-- Contact Form -->
+      <div class="glass-card">
           <p class="ppe">Send a Message</p>
           <form action="https://formspree.io/f/xykdebko" method="post" class="modern-form">
               <div class="input-group">
                   <label for="name">Name</label>
-                  <input type="text" id="name" name="name" placeholder="John Doe" required>
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
               </div>
-              
               <div class="input-group">
                   <label for="email">Email</label>
-                  <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                  <input type="email" id="email" name="email" placeholder="your@gmail.com" required>
               </div>
-              
               <div class="input-group">
                   <label for="message">Message</label>
-                  <textarea id="message" name="message" placeholder="How can we work together?" rows="5" required></textarea>
+                  <textarea id="message" name="message" placeholder="Your message..." rows="4" required></textarea>
               </div>
-              
               <button type="submit" class="submit-btn">
                   <i class="fa-solid fa-paper-plane"></i> Send Message
               </button>
@@ -53,3 +141,15 @@
       </div>
   </div>
 </section>
+
+<!-- Footer -->
+<footer class="cl">
+  <p>© <span id="year"></span> <span class="jig">Palle Yashwanth</span>. All Rights Reserved.</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
