@@ -1,123 +1,278 @@
-/* --- Optimized Get In Touch Section --- */
+/* Global Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.asd {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(0, 200, 255, 0.45), transparent 50%),
+    radial-gradient(circle at 90% 10%, rgba(113, 39, 150, 0.4), transparent 50%),
+    radial-gradient(circle at 50% 90%, rgba(0, 120, 255, 0.35), transparent 55%),
+    linear-gradient(135deg, #050816, #0d0a22, #050816);
+  background-attachment: fixed;
+  color: white;
+}
+
+/* Hero Section */
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 80px 20px;
+}
+
+.bob {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 50%;
+  border: 4px solid #4facfe;
+  box-shadow: 0 0 30px rgba(79, 172, 254, 0.5);
+}
+
+.top {
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 800;
+  line-height: 1.1;
+  background: linear-gradient(270deg, #38BDF8, #A855F7, #38BDF8);
+  background-size: 400% 400%;
+  animation: gradientMove 6s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.opp {
+  color: #38BDF8;
+  font-size: clamp(18px, 4vw, 24px);
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+/* Buttons */
+.cta-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn, .resume-btn {
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #38BDF8, #6366F1);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+}
+
+.btn:hover, .resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.6);
+}
+
+/* Standard Section Layout */
+.ab {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+}
+
+.hd {
+  color: #38BDF8;
+  font-size: clamp(30px, 5vw, 45px);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pg {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+/* Skills */
+.sv {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.neo-btn {
+  padding: 12px 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 8px;
+  font-weight: 700;
+  color: #38BDF8;
+  transition: 0.3s;
+}
+
+.neo-btn:hover {
+  background: #38BDF8;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Projects Grid */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #38BDF8;
+}
+
+.pp { font-size: 22px; margin-bottom: 15px; }
+.sv-text { color: #94a3b8; line-height: 1.5; font-size: 15px; }
+.tech-tag { color: #38BDF8; font-weight: 600; }
+
+/* Education */
+.education-section {
+  padding: 60px 20px;
+  background: rgba(14, 116, 144, 0.1);
+}
+
+.edu-box {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  padding-left: 20px;
+  border-left: 3px solid #38BDF8;
+}
+
+.ji { color: #A855F7; margin-bottom: 5px; }
+.school { font-size: 18px; color: #f1f5f9; margin-bottom: 5px; }
+.cs { color: #94a3b8; }
+
+/* Get In Touch Grid */
 .contact-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .glass-card {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 40px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.sv-text {
-  color: #CBD5E1;
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 25px;
-}
-
-/* Contact Details Links */
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
+.contact-details { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
 
 .detail-item {
   display: flex;
   align-items: center;
   gap: 15px;
-  color: #d1d5db;
+  color: #cbd5e1;
   text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  transition: 0.3s;
 }
 
-.detail-item i {
-  font-size: 20px;
-  color: #38BDF8;
-}
+.detail-item i { color: #38BDF8; font-size: 20px; }
+.detail-item:hover { color: #38BDF8; }
 
-.detail-item:hover {
-  color: #38BDF8;
-}
+/* Forms */
+.modern-form { display: flex; flex-direction: column; gap: 20px; }
+.input-group { display: flex; flex-direction: column; gap: 8px; }
 
-/* Modern Form Styling */
-.modern-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.input-group label {
-  color: #e2e8f0;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-.input-group input,
-.input-group textarea {
-  width: 100%;
+.input-group input, .input-group textarea {
   padding: 14px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  color: #ffffff;
-  font-size: 15px;
-  transition: all 0.3s ease;
+  border-radius: 8px;
+  color: white;
   font-family: inherit;
 }
 
-.input-group input::placeholder,
-.input-group textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-/* Glowing Focus Effect */
-.input-group input:focus,
-.input-group textarea:focus {
+.input-group input:focus, .input-group textarea:focus {
   outline: none;
   border-color: #38BDF8;
-  box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
-  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
 }
 
 .submit-btn {
-  margin-top: 10px;
   padding: 16px;
-  width: 100%;
   background: linear-gradient(135deg, #38BDF8, #6366F1);
-  color: white;
   border: none;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: bold;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: 0.3s;
 }
 
-.submit-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.5);
+.submit-btn:hover { opacity: 0.9; transform: scale(1.02); }
+
+.ppe { font-size: 28px; font-weight: 700; margin-bottom: 10px; }
+
+.socials { display: flex; gap: 15px; margin-top: 15px; }
+.icon {
+  width: 45px; height: 45px; border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  display: flex; justify-content: center; align-items: center;
+  color: white; text-decoration: none; transition: 0.3s;
+}
+
+.icon:hover { background: #38BDF8; transform: translateY(-5px); }
+
+/* Footer */
+.cl {
+  text-align: center;
+  padding: 40px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 60px;
+}
+.jig { color: #eac809; }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .box { flex-direction: column; text-align: center; padding: 40px 20px; }
+  .bob { max-width: 250px; }
+  .ab { width: 95%; padding: 20px; }
 }
