@@ -279,24 +279,19 @@ body {
 /* Add these styles to your style.css file for the images: */
 .project-img-wrapper {
     width: 100%;
-    aspect-ratio: 16 / 9; /* Keeps all project boxes the same size */
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 15px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(0, 0, 0, 0.2); /* Fills any extra side space with a clean dark tint */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .project-img {
     width: 100%;
-    height: 100%;
-    object-fit: contain; /* CHANGED: Shows 100% of your image without zooming or cropping */
+    height: auto; /* Displays the full image height naturally */
+    display: block;
     transition: transform 0.5s ease;
 }
 
 .project-card:hover .project-img {
-    transform: scale(1.04); /* Subtle hover zoom that won't clip your content */
+    transform: scale(1.04);
 }
